@@ -29,6 +29,7 @@ public class StandaloneCopy {
 		driver.findElement(By.name("login")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()=\"Automation Practice\"]")));
 		System.out.println(driver.getTitle());
+		System.out.println("Added new line here");
 
 		List<WebElement> elements = driver.findElements(By.xpath("//button[@class='btn w-10 rounded']"));
 		System.out.println(elements.size());
@@ -56,6 +57,7 @@ public class StandaloneCopy {
 		JavascriptExecutor up = (JavascriptExecutor) driver;
 		up.executeScript("window.scrollBy(0,-200)");
 		Sleep(1500);
+		System.out.println("Scrolled");
 
 		Actions act = new Actions(driver);
 		act.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")), "india").build().perform();
