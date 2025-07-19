@@ -70,7 +70,8 @@ public class StandaloneCopy {
 		String actualText = driver.findElement(By.cssSelector(".hero-primary")).getText().trim();
 		Assert.assertEquals(actualText, "THANKYOU FOR THE ORDER.");
 		Sleep(2000);
-
+		System.out.println("HERE I ADDED NEW LINE FOR NEW PULL IN ANOTHER USER ");
+		System.out.println("Have a great day");
 		driver.quit();
 	}
 
